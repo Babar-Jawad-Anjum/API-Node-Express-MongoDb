@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.json()); 
 
+var port = process.env.PORT || 3000;
+
 // database connection
 const url = `mongodb+srv://BabarJawad:UawWvf1V6YAVRqWF@cluster0.v5rvh.mongodb.net/Babar-Fitness-Studio?retryWrites=true&w=majority`;
 mongoose.connect(url, {
@@ -93,4 +95,4 @@ app.delete('/api/users/delete/:id', (req, res) =>{
     });
 });
 
-app.listen(3300);
+app.listen(port);
