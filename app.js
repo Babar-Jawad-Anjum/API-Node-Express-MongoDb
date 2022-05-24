@@ -2,7 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import Models from './Models/models.js'
 import cors from 'cors'
-import bodyParser from 'body-Parser'
+import bodyParser from 'body-parser'
 
 
 const app = express();
